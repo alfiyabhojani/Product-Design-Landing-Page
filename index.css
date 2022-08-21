@@ -10,23 +10,64 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.list {
+.nav__section {
   display: inline-flex;
+  padding: 15px;
 }
-.item {
+.nav__section li a {
+  text-decoration: none;
   margin: 30px 30px;
   font-size: 25px;
+  color: white;
+}
+.nav__section li {
+  list-style: none;
 }
 .logo {
-  /* width: 70px; */
   margin-top: 30px;
   margin-left: 50px;
   height: 40px;
   filter: opacity(0.4) drop-shadow(0 0 0 #b4161b);
 }
+.toggle {
+  display: none;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 15px;
+}
 .fa-caret-down {
   color: white;
 }
+@media only screen and (max-width: 480px) {
+  header{
+    display: block;
+  }
+  .logo {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 25%;
+  }
+  .header-section {
+    display: block;
+  }
+  .nav__section {
+    display: block;
+    padding: 15px;
+  }
+  .toggle {
+    display: block;
+  }
+  .nav__section li a {
+    font-size: 16px;
+    margin: auto 10px;
+  }
+  .logo-toggle {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* first */
 .first {
   display: flex;
   justify-content: space-around;
@@ -65,6 +106,44 @@ header {
   margin-top: 50px;
   font-weight: 700;
 }
+@media only screen and (max-width: 480px) {
+  .first {
+    display: block;
+  }
+  .first-left {
+    width: 100%;
+  }
+  .human {
+    width: 90%;
+    height: 100%;
+  }
+  .first-right {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .first-right h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .first-right h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .first-right p {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .me {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 25%;
+  }
+}
+
+/* second */
 .second {
   color: white;
   margin-top: 50px;
@@ -155,6 +234,90 @@ header {
 .second-right img {
   margin-right: 50px;
 }
+@media only screen and (max-width: 480px) {
+  .second {
+    margin-top: 20px;
+  }
+  .second-up {
+    display: block;
+    width: 70%;
+  }
+  .second-left img {
+    margin-right: 0;
+    width: 50%;
+    margin-left: 25%;
+  }
+  .second-left h1 {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .second-left h6 {
+    margin-left: 0;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .second-left h5 {
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+  .second-center {
+    margin: 10px auto;
+  }
+  .second-center img {
+    margin-right: 0;
+    width: 50%;
+    margin-left: 25%;
+  }
+  .second-center h1 {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .second-center h6 {
+    margin-left: 0;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .second-center h5 {
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+  .second-right img {
+    margin-right: 0;
+    width: 50%;
+    margin-left: 20%;
+    margin-right: 0;
+  }
+  .second-right h1 {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .second-right h6 {
+    margin-left: 0;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .second-right h5 {
+    margin-top: 10px;
+    margin-left: 0;
+    padding-bottom: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+/* second-bottom */
 .second-bottom {
   display: flex;
   justify-content: space-between;
@@ -200,6 +363,31 @@ header {
   font-size: 30px;
   font-weight: 100;
 }
+@media only screen and (max-width: 480px) {
+  .second-bottom {
+    display: block;
+  }
+  .bottom-left {
+    margin-top: 20px;
+  }
+  .bottom-left h1 {
+    font-size: 60px;
+  }
+  .boxes {
+    /* padding: auto auto; */
+    height: auto;
+    width: 40%;
+    margin: 10px auto;
+  }
+  .boxes p {
+    font-size: 14px;
+  }
+  .boxes h1 {
+    font-size: 40px;
+  }
+}
+
+/* third */
 .third {
   color: white;
   width: 80%;
@@ -249,6 +437,47 @@ header {
   font-size: 15px;
   margin: 10px 35px;
 }
+@media only screen and (max-width: 480px) {
+  .third {
+    margin-top: 20px;
+  }
+  .third-up {
+    display: block;
+  }
+  .title h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .title p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .btn {
+    width: 150px;
+    height: 40px;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-left: 20%;
+  }
+  .content {
+    display: block;
+    margin-top: 10px;
+  }
+  .content img {
+    width: 80%;
+    margin: 10px 10px;
+    padding: 10px 10px;
+  }
+  .three h1 {
+    font-size: 25px;
+  }
+  .three p {
+    font-size: 14px;
+    margin: 5px 40px;
+  }
+}
+
+/* fourth */
 .fourth {
   color: white;
   display: flex;
@@ -282,6 +511,30 @@ header {
   margin-top: 50px;
   font-weight: 700;
 }
+@media only screen and (max-width: 480px) {
+  .fourth {
+    display: block;
+    margin: 20px auto;
+  }
+  .fourth-left h1 {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .fourth-left p {
+    font-size: 17px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .contact {
+    width: 150px;
+    height: 40px;
+    margin-top: 0;
+    margin-left: 40%;
+  }
+}
+
+/* fifth */
 .fifth {
   width: 80%;
   margin: auto;
@@ -298,7 +551,6 @@ header {
 }
 .sixth {
   display: flex;
-
   margin: auto;
   justify-content: space-around;
   margin: 20px 10px;
@@ -308,6 +560,7 @@ header {
 .do-logo {
   height: 40px;
   margin-left: 50px;
+  filter: opacity(0.4) drop-shadow(0 0 0 #b4161b);
 }
 .icons {
   margin: 0 300px;
@@ -316,4 +569,30 @@ header {
   color: white;
   padding: 0 20px;
   align-items: center;
+}
+@media only screen and (max-width: 480px) {
+  .section {
+    display: flex;
+    background-color: hsla(198, 12%, 16%, 0.3);
+  }
+  .fifth {
+    display: block;
+  }
+  .sixth {
+    display: block;
+    background-color: transparent;
+    margin: 5px 0;
+    padding: 10px;
+  }
+  .do-logo {
+    margin-left: 0;
+    width: 80%;
+  }
+  .icon {
+    padding: 0 5px;
+  }
+  .icons {
+    margin: 5px 5px;
+    font-size: 10px;
+  }
 }
